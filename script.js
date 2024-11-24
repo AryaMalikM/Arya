@@ -1,19 +1,25 @@
+// Ambil elemen HTML
 const menuIcon = document.getElementById("menu-icon");
 const menuList = document.getElementById("menu-list");
-const btnHome = document.getElementById("btn-nav-home")
-const navContainer = document.getElementById("nav-container");
+
+// Fungsi untuk toggle menu
+function toggleMenu() {
+    menuList.classList.toggle("hidden");
+}
+
+// Event listener untuk menu icon
+menuIcon.addEventListener("click", toggleMenu);
+
+// Event listener untuk tombol Home
+const btnHome = document.getElementById("btn-nav-home");
+btnHome.addEventListener("click", toggleMenu);
+
+// Event listener untuk tombol Bidang
 const btnBidang = document.getElementById("nav-btn-bidang");
+btnBidang.addEventListener("click", toggleMenu);
 
-menuIcon.addEventListener("click", () => {
-    menuList.classList.toggle("hidden")
+// Event listener untuk navigasi ke halaman lain
+const navigateButton = document.getElementById("navigateButton");
+navigateButton.addEventListener("click", () => {
+    window.location.href = "mpk-index.html";
 });
-
-btnHome.addEventListener("click", () =>{
-    menuList.classList.toggle("hidden")
-})
-
-btnBidang.addEventListener("click", () =>{
-    menuList.classList.toggle("hidden")
-})
-
-

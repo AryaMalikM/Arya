@@ -1,16 +1,29 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link  rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>OSIS SMA NEGERI 23 KABUPATEN TANGERANG</title>
+    <link rel="stylesheet" href="../tempstyle.css" />
+</head>
+<style>
+    
 * {
     margin: 0;
     padding: 0; 
-
  }
  html,body {
      overflow-x: hidden;
      scroll-behavior: smooth;
      background-color: white;
-     justify-content: center;
  }
- 
  
  .container {
      display: flex;
@@ -131,21 +144,17 @@
      position: absolute;
      background-color: white;
      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
-     margin-top: 2.5rem;
+     margin-top: 2.6rem;
      padding: 10px;
      list-style: none;
      width: 120px;
      z-index: -99;
-     max-height: 0;
-    
  }
 
 
  .navbar .navbar-ul .navbar-li:hover > .dropdown-menu {
     display: block;
     z-index: 999;
-    transition: opacity 0.3s ease, max-height 0.3s ease;
-    max-height: 500px;
  }
  
  .dropdown-menu .dropdown-item {
@@ -185,32 +194,6 @@
      background-color: rgb(140, 163, 238);
      transition: all 0.5s ease-in-out;
  }
-
- .navbar .navbar-ul .navbar-li .active::before {
-    content: " ";
-    position: absolute;
-    left: 0px;
-    bottom: 0;
-    width: 100%;
-    height: 4px;
-    background-color: rgb(140, 163, 238);
-    transition: all 0.5s ease-in-out;
- }
-
- .navbar .navbar-ul .navbar-li .active {
-    opacity: 100%;
- }
-
- .dropdown-menu .dropdown-item:hover >.navbar .navbar-ul .navbar-li .dropdown-toggle{
-    content: " ";
-    position: absolute;
-    left: 0px; /* Memulai dari luar layar */
-    bottom: 0;
-    width: 100%;
-    height: 4px;
-    background-color: rgb(140, 163, 238);
-    transition: all 0.5s ease-in-out;
-}
  
  .navbar .navbar-ul .navbar-li .dropdown-toggle:hover::before {
      left: 0; /* Animasi underline ke posisi awal */
@@ -237,8 +220,6 @@
     height: 50rem;
     overflow: hidden;
     position: relative;
-    width: 100%;
-    margin-inline: 0;
 
 }
 
@@ -249,7 +230,6 @@
     justify-content: center;
     border-bottom-left-radius: 60% 110px;
     border-bottom-right-radius: 60% 110px;  
-    object-position: bottom;
   
 }
 
@@ -472,7 +452,7 @@
     text-decoration: underline;
     text-underline-offset: 4px;
 }
-.reponsive-navbar ul {
+.reponsive-navbar .responsive-ul {
     display: none;
 }
 
@@ -524,9 +504,6 @@
 }
 
 .button-65 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     appearance: none;
     backface-visibility: hidden;
     background-color: #2f80ed;
@@ -538,7 +515,7 @@
     cursor: pointer;
     display: inline-block;
     font-family: Inter,-apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 500;
     height: 50px;
     letter-spacing: normal;
@@ -652,10 +629,6 @@
     
     .dashboard-container .dashboard-title3 {
         font-family:  "Poetsen One", sans-serif ;
-    }
-
-    .dropdown-menu {
-        margin-top: 1.9rem;
     }
     .text-logo {
         margin: 7px;
@@ -773,7 +746,7 @@
         margin-left: 0px;
     }
     
-    .reponsive-navbar ul {
+    .reponsive-navbar .responsive-ul {
         position: fixed;
         width: 100%;
         flex-direction: column;
@@ -786,15 +759,15 @@
         margin-top: 4.5rem;
     }
     
-    .reponsive-navbar ul {
+    .reponsive-navbar .responsive-ul {
         list-style: none;
         box-shadow: black ;
     }
     
-    .reponsive-navbar ul li {
+    .reponsive-navbar .responsive-ul .responsive-li  {
         margin: 2rem;
     }
-    .reponsive-navbar ul li a {
+    .reponsive-navbar .responsive-ul .responsive-li .responsive-link {
         text-decoration: none;
         color: black;
         justify-content: center;
@@ -804,17 +777,32 @@
         font-family:  "Poetsen One", sans-serif ;
     }
     
-    .reponsive-navbar ul li a {
+    .reponsive-navbar .responsive-ul .responsive-li .responsive-link {
         position: relative;
         overflow: hidden;
         transition: all 0.5s ease-in-out;
     }
     
-    .reponsive-navbar ul li a:hover {
+    .reponsive-navbar .responsive-ul .responsive-li .responsive-link:hover {
         opacity: 100%;
     }
 
-    
+    .reponsive-navbar .responsive-ul .reponsive-dropdown-menu {
+    display: block;
+    background-color: white;
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.reponsive-navbar .responsive-ul .dropdown-item:hover {
+    background-color: rgb(140, 163, 238);
+    color: white;
+}
+
 
     .sekbid-background {
         padding-bottom: 65rem;
@@ -934,9 +922,76 @@
     .message-left {
         font-size: 15px;
     }
-
-    .image-container {
-        max-width: 400px;
-        width: 100%;
-    }
 }
+</style>
+<body>
+            <!--NAVIGATION-->
+            <div class="container" id="nav-container">
+                <div class="logo">
+                    <img src="image/logo_sman_23-removebg-preview (2).png"alt="SMAN 23 LOGO" class="logo-sman">
+                    <img src="image/osis-removebg-preview.png" alt="OSIS LOGO" class="logo-osis">
+                    <div class="text-logo">
+                        <h1>MPK & OSIS SMAN 23</h1>
+                    <p>OFFICIAL WEBSITE</p>
+                    </div>
+                </div>
+                <nav class="navbar">
+                    <ul class="navbar-ul">
+                        <li class="navbar-li"><a href="#" class="navbar-link">HOME</a></li>
+                        <li class="navbar-li">
+                            <a href="#" class="dropdown-toggle">BIDANG ▼</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" class="dropdown-item">Inti OSIS</a></li>
+                                <li><a href="#" class="dropdown-item">Bidang 1</a></li>
+                                <li><a href="#" class="dropdown-item">Bidang 2</a></li>
+                                <li><a href="#" class="dropdown-item">Bidang 3</a></li>
+                                <li><a href="#" class="dropdown-item">Bidang 4</a></li>
+                                <li><a href="#" class="dropdown-item">Bidang 5</a></li>
+                                <li><a href="#" class="dropdown-item">Bidang 6</a></li>
+                                <li><a href="#" class="dropdown-item">Bidang 7</a></li>
+                                <li><a href="#" class="dropdown-item">Bidang 8</a></li>
+                                <li><a href="#" class="dropdown-item">Bidang 9</a></li>
+                                <li><a href="#" class="dropdown-item">Bidang 10</a></li>
+                            </ul>
+                        </li>
+                        <li class="navbar-li"> <a href="mpk-index.html" class="navbar-link">MPK</a></li>
+                        <li class="navbar-li"><a href="#" class="navbar-link">LAINNYA</a></li>
+                    </ul>
+                    <div id="menu-icon" class="menu-icon">
+                        <i class="ph-fill ph-list"></i>
+                    </div>
+                </nav>
+            </div>
+            <!--RESPONSIVE NAVBAR-->
+            <div class="reponsive-navbar" >
+                <ul id="menu-list" class="hidden responsive-ul"  >
+                    <li class="responsive-li"><a href="#home" class="responsive-link" id="btn-nav-home">HOME</a></li>
+                    <li class="responsive-li"><a href="#sekbid"  class="responsive-dropdown-toggle">BIDANG</a>
+                        <div class="reponsive-dropdown-menu">
+                            <ul>
+                                <li class="responsive-dropdown-li"><a href="#"  class="responsive-dropdown-link">Inti OSIS</a></li>
+                                <li class="responsive-dropdown-li">
+                                    <a href="#" class="responsive-dropdown-link">Bidang</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="responsive-li"><a href="mpk-index.html" id="btn-nav-mpk" class="responsive-link">MPK</a></li>
+                    <li class="responsive-li"><a href="mpk-index.html" id="btn-nav-mpk" class="responsive-link">LAINNYA</a></li>
+                </ul>
+            </div>
+           
+            <!--DASHBOARD-->
+            <div class="dashboard-container" id="home"> 
+                <div class="dashboard-item"> 
+                    <img src="image/www.reallygreatsite.com.png" alt="" class="image-dashboard">
+                    <div class="dashboard-content animate__animated animate__fadeInUp">
+                        <h1 class="dashboard-title"> WELCOME TO </h1>
+                        <h2 class="dashboard-title2"> MPK & OSIS SMAN 23</h2>
+                        <h3 class="dashboard-title3">OFFICIAL WEBSITE</h3>
+                    </div>
+                </div>
+            </div>
+            <script src="script.js"></script>
+      </body>
+</html>

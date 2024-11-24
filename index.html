@@ -10,6 +10,7 @@
     <link  rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>OSIS SMA NEGERI 23 KABUPATEN TANGERANG</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../tempstyle.css" />
@@ -26,28 +27,44 @@
                 </div>
             </div>
             <nav class="navbar">
-                <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#sekbid">BIDANG</a></li>
-                    <li><a href="#">MPK</a></li>
-                    <li><a href="#">LAINNYA</a></li>
+                <ul class="navbar-ul">
+                    <li class="navbar-li"><a href="#" class="navbar-link active">HOME</a></li>
+                    <li class="navbar-li">
+                        <a href="#sek" class="dropdown-toggle">BIDANG ▼</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="inti-osis-index.html" class="dropdown-item">Inti OSIS</a></li>
+                            <li><a href="#" class="dropdown-item">Sekbid 1</a></li>
+                            <li><a href="#" class="dropdown-item">Sekbid 2</a></li>
+                            <li><a href="#" class="dropdown-item">Sekbid 3</a></li>
+                            <li><a href="#" class="dropdown-item">Sekbid 4</a></li>
+                            <li><a href="#" class="dropdown-item">Sekbid 5</a></li>
+                            <li><a href="#" class="dropdown-item">Sekbid 6</a></li>
+                            <li><a href="#" class="dropdown-item">Sekbid 7</a></li>
+                            <li><a href="#" class="dropdown-item">Sekbid 8</a></li>
+                            <li><a href="#" class="dropdown-item">Sekbid 9</a></li>
+                            <li><a href="#" class="dropdown-item">Sekbid 10</a></li>
+                        </ul>
+                    </li>
+                    <li class="navbar-li"> <a href="mpk-index.html" class="navbar-link">MPK</a></li>
+                    <li class="navbar-li"><a href="#event" class="navbar-link">ACARA</a></li>
                 </ul>
                 <div id="menu-icon" class="menu-icon">
                     <i class="ph-fill ph-list"></i>
                 </div>
             </nav>
         </div>
-
+        <!--RESPONSIVE NAVBAR-->
         <div class="reponsive-navbar" >
             <ul id="menu-list" class="hidden"  >
                 <li><a href="#home" id="btn-nav-home">HOME</a></li>
                 <li><a href="#sekbid" id="btn-nav-bidang">BIDANG</a></li>
-                <li><a href="#" id="btn-nav-mpk">MPK</a></li>
-                <li><a href="#" id="btn-nav-lainnya">LAINNYA</a></li>
+                <li><a href="inti-osis-index.html" >INTI OSIS</a></li>
+                <li><a href="mpk-index.html" id="btn-nav-mpk">MPK</a></li>
+                <li><a href="" id="btn-nav-lainnya">ACARA</a></li>
             </ul>
         </div>
        
-
+        <!--DASHBOARD-->
         <div class="dashboard-container" id="home"> 
             <div class="dashboard-item"> 
                 <img src="image/www.reallygreatsite.com.png" alt="" class="image-dashboard">
@@ -58,6 +75,126 @@
                 </div>
             </div>
         </div>
+
+        <div class="slogan-main-title">
+            <h1 class="slogan-title"> BERSAMA MAJUKAN SEKOLAH</h1>
+            <div class="element">
+            <img src="image/element.png" alt="" class="image-element">
+        </div>
+            <p class="slogan-paragraft">OSIS berkomitmen untuk merancang berbagai program yang dapat meningkatkan kreativitas, kedisplinan dan kerohanian siswa.</p>
+        </div>
+            <!--PESAN KETUA-->
+            <style>
+        
+            </style>
+    <div class="pesan-container">
+        <img src="image/Untitled (29.7 x 42 cm) (1).png" alt="Illustration" class="illustration-left">
+        <div class="pesan-content">
+            <div class="pesan-title">Pesan ketua 1, Kafka Khoirul Rahman</div>
+            <div class="message">
+                "Hidup ini penuh tantangan, tetapi setiap langkah kecil membawa kita lebih dekat ke impian. Teruslah berjuang dan jangan menyerah!"
+            </div>
+        </div>
+    </div>
+
+    <div class="pesan-container-left">
+        <div class="pesan-content-left">
+            <div class="pesan-title-left">Pesan ketua 2, Zahra Mayesti</div>
+            <div class="message-left">
+                "Hidup ini penuh tantangan, tetapi setiap langkah kecil membawa kita lebih dekat ke impian. Teruslah berjuang dan jangan menyerah!"
+            </div>
+        </div>
+        <img src="image/woman ovbc.png" alt="Illustration" class="illustration">
+    </div>
+
+    <div class="pesan-container">
+        <img src="image/Untitled (29.7 x 42 cm) (1).png" alt="Illustration" class="illustration">
+        <div class="pesan-content">
+            <div class="pesan-title">Pesan ketua 3, Luvia Azwanisa</div>
+            <div class="message">
+                "Hidup ini penuh tantangan, tetapi setiap langkah kecil membawa kita lebih dekat ke impian. Teruslah berjuang dan jangan menyerah!"
+            </div>
+        </div>
+    </div>
+        <div class="event-main-title" id="event">
+            <h1 class="event-title">PROGRAM EVENT</h1>
+            <div class="element">
+                <img src="image/element.png" alt="" class="image-element">
+            </div>
+        </div>
+        <!--EVENT-->
+        <div class="event-main">
+        <div class="event-container"> 
+            <div class="event-item">
+                <img src="image/www.reallygreatsite.com.png" alt="" class="image-event">
+                <h1 class="event-name">DUGA EVENT 1</h1>
+            </div>
+            <div class="event-item">
+                <img src="image/www.reallygreatsite.com.png" alt="" class="image-event">
+                <h1 class="event-name">DUGA EVENT 2</h1>
+            </div>
+            <div class="event-item">
+                <img src="image/www.reallygreatsite.com.png" alt="" class="image-event">
+                <h1 class="event-name">DUGA EVENT 3</h1>
+            </div>
+        </div>
+    </div>
+        <style>
+            .slogan-main-title {
+                display: block;
+                justify-content: center;
+                margin-top: 10rem;
+                padding-top: 2px;
+                margin-bottom: 5rem;
+            }
+        
+            .element{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .image-element {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                max-width: 100px;
+                align-items: center
+            }
+        .slogan-title {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                font-family:  "Poetsen One", sans-serif ;
+            }
+
+            .slogan-paragraft {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                font-family: "Poppins", sans-serif;
+                font-style: italic;
+                color: rgb(121, 121, 121) ;
+                margin-top: 2px;
+            }
+
+            .event-main-title {
+                display: block;
+                justify-content: center;
+                margin-top: 10rem;
+                padding-top: 2px;
+                margin-bottom: 5rem;
+            }
+
+            .event-title {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family:  "Poetsen One", sans-serif ;
+            }
+        </style>
 
 <main class="sekbid-background">
         <div class="title" id="sekbid" >
@@ -109,20 +246,25 @@
         </div>
     </main>
 
-    <main class="location-background">
+    <main class="main-lainnya">
      <div class="main-title">
             <h1 class="title-location">LOCATION</h1>
+            <div class="element">
+                <img src="image/element.png" alt="" class="image-element">
+            </div>
             <p class="location-paragraft">SMA NEGERI 23 KABUPATEN TANGERANG</p>
         </div>
-
+        <div class="social-container">
     <div class="main-location">
         <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.200352285366!2d106.61006687418288!3d-6.2373024610771886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fc11234a3c4f%3A0x8a0ee52049fdd08f!2sSMA%20Negeri%2023%20Kabupaten%20Tangerang!5e0!3m2!1sid!2sid!4v1731913924876!5m2!1sid!2sid" width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
-</main>
-    <style>
-      
+    </div>
 
-    </style>
+    <div class="next-page-btn"><!-- HTML !-->
+        <a href="mpk-index.html" class="button-65" role="button">GO TO NEXT PAGE >></a>
+       </div>
+</div>
+</main>
         <script src="script.js"></script>
 </body>
 </html>
