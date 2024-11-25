@@ -887,9 +887,8 @@
     }
 
     .image-container {
-        max-width: 900px;
-        height: 200px;
-        margin: 2rem;
+        max-width: 300px;
+        width: 100%;
     }
 
     .maps {
@@ -898,7 +897,7 @@
     }
 
     .sekbid-background {
-        padding-bottom: 165rem;
+        padding-bottom: 65rem;
     }
     
     .illustration {
@@ -936,7 +935,18 @@
     }
 
     .image-container {
-        max-width: 400px;
+        max-width: 300px;
         width: 100%;
+    }
+}
+
+@media (max-width: 662px) {
+    .maps {
+        width: 400px;
+        height: 600px;
+    }
+
+    .sekbid-background {
+        padding-bottom: 135rem;
     }
 }

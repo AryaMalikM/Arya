@@ -241,6 +241,8 @@
 }
 
 .dashboard-container .dashboard-item {
+    justify-content: center;
+    align-items: center;
     display: flex;
     width: 120rem;
     height: 50rem;
@@ -841,6 +843,11 @@
     .image-element {
         max-width: 50px;
     }
+    
+    .card {
+        margin: 0;
+        margin-bottom: 2rem;
+    }
 
     .card .image img {
         width: 280px;
@@ -892,4 +899,20 @@
     .sekbid-background {
         padding-bottom: 65rem;
     }   
+}
+
+@media (max-width: 600px ) {
+    .dashboard-container .dashboard-item {
+        width: 38rem;
+        height: 50rem;
+    }
+
+    .dashboard-container .dashboard-item .image-dashboard {
+        width: 150%;
+        height: 100%;
+    }
+
+    .sekbid-background {
+        padding-bottom: 135rem;
+    }
 }
