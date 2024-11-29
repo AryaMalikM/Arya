@@ -10,12 +10,15 @@ function toggleMenu() {
 // Event listener untuk menu icon
 menuIcon.addEventListener("click", toggleMenu);
 
+const btnOrgisme = document.getElementById("btn-nav-mpk");
+btnOrgisme.addEventListener("click", toggleMenu);
+
 // Event listener untuk tombol Home
 const btnHome = document.getElementById("btn-nav-home");
 btnHome.addEventListener("click", toggleMenu);
 
 // Event listener untuk tombol Bidang
-const btnBidang = document.getElementById("nav-btn-bidang");
+const btnBidang = document.getElementById("btn-nav-bidang");
 btnBidang.addEventListener("click", toggleMenu);
 
 // Event listener untuk navigasi ke halaman lain
