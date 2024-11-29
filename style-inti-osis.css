@@ -940,4 +940,57 @@
      width: 35px;
      height: 40px;
     }
+
+
+    .dashboard-container .dashboard-item {
+        display: none;
+       }
+    
+       .navbar-container .logo .logo-sman{
+        display: inline;
+        width: 43px;
+        height: 40px;
+       }
+    
+       .navbar-container .logo .logo-osis {
+        width: 35px;
+        height: 40px;
+       }
+    
+       .title-card {
+        font-size: 1.2rem;
+       }
+    
+       .subtitle {
+        font-size: .8rem;
+       }
+    
+       .card {
+        width: 190px;
+       }
+    
+       .card .image img {
+        width: 180px;
+        height: 190px;
+       }
+    
+       .name {
+        font-size: 1rem;
+       }
+    
+       .role  {
+        font-size: .7rem;
+       }
+    
+       .quote {
+        font-size: .7rem;
+       }
+    
+       .title-bidang {
+        font-size: 1.2rem;
+       }
+    
+       .bidang-paragraft {
+        font-size: .8rem;
+       }
  }
