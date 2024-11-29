@@ -280,6 +280,61 @@
     font-size: 1.2rem;
 }
 
+.slogan-main-title {
+    display: block;
+    justify-content: center;
+    margin-top: 10rem;
+    padding-top: 2px;
+    margin-bottom: 5rem;
+}
+
+.element{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-element {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 100px;
+    align-items: center
+}
+.slogan-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family:  "Poetsen One", sans-serif ;
+}
+
+.slogan-paragraft {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-style: italic;
+    color: rgb(121, 121, 121) ;
+    margin-top: 2px;
+}
+
+.event-main-title {
+    display: block;
+    justify-content: center;
+    margin-top: 10rem;
+    padding-top: 2px;
+    margin-bottom: 5rem;
+}
+
+.event-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:  "Poetsen One", sans-serif ;
+}
+
 .title {
     display: block;
     justify-content: center;
@@ -412,6 +467,7 @@
 .pesan-content-left {
     max-width: 700px;
     float: right;
+    
 }
 .pesan-title-left {
     font-size: 35px;
@@ -950,3 +1006,102 @@
         padding-bottom: 135rem;
     }
 }
+
+@media (max-width: 375px) {
+    .logo h1 {
+     font-size: 12px;
+    }
+ 
+    .logo p {
+     font-size: 8px;
+    }
+ 
+    .container .logo .logo-sman{
+     display: inline;
+     width: 43px;
+     height: 40px;
+    }
+ 
+    .container .logo .logo-osis {
+     width: 35px;
+     height: 40px;
+    }
+
+    .dashboard-container {
+        margin-top: 2rem;
+     }
+
+     .reponsive-navbar ul {
+        margin-top: 4rem;
+     }
+
+     .reponsive-navbar ul .reponsive-li {
+        font-size: 12px;
+     }
+
+     .dashboard-container .dashboard-content .dashboard-title {
+        font-size: 1.2rem;
+     }
+
+     .dashboard-container .dashboard-content .dashboard-title2 {
+        font-size: 1.8rem;
+
+     }
+
+     .dashboard-container .dashboard-content .dashboard-title3 {
+        font-size: 1rem;
+     }
+
+     .slogan-title {
+        font-size: 1.2rem;
+     }
+
+     .image-element {
+        max-width: 50px;
+     }
+
+     .slogan-paragraft {
+        font-size: 0.5rem;
+        margin-top: 0px;
+     }
+
+     .pesan-container {
+        padding: 5px;
+     }
+
+     .illustration {
+        width: 150px;
+     }
+
+     .pesan-content {
+        max-width: 700px;
+     }
+
+     .pesan-title {
+        font-size: 14px;
+     }
+
+     .message {
+        font-size: 10px;
+     }
+
+     .pesan-container-left {
+        padding: 5px;
+     }
+
+     .illustration-left {
+        width: 150px;
+     }
+
+     .pesan-container-left {
+        max-width: 700px;
+     }
+
+     .pesan-title-left {
+        font-size: 14px;
+     }
+
+     .message-left {
+        font-size: 10px;
+     }
+ }

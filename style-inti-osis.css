@@ -916,3 +916,28 @@
         padding-bottom: 135rem;
     }
 }
+
+@media (max-width: 375px) {
+    .logo h1 {
+     font-size: 12px;
+    }
+ 
+    .logo p {
+     font-size: 8px;
+    }
+    
+    .dashboard-container .dashboard-item {
+     display: none;
+    }
+ 
+    .navbar-container .logo .logo-sman{
+     display: inline;
+     width: 43px;
+     height: 40px;
+    }
+ 
+    .navbar-container .logo .logo-osis {
+     width: 35px;
+     height: 40px;
+    }
+ }
