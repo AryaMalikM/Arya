@@ -927,9 +927,17 @@
    }
 
    .container .logo .logo-osis {
-    width: 35px;
+    width: 38px;
     height: 40px;
    }
+
+   .reponsive-navbar ul {
+    margin-top: 4rem;
+ }
+
+ .reponsive-navbar ul .reponsive-li {
+    font-size: 12px;
+ }
    
    .dashboard-container .dashboard-item {
     display: none;
@@ -944,6 +952,14 @@
    .navbar-container .logo .logo-osis {
     width: 35px;
     height: 40px;
+   }
+
+   .slogan-title {
+    font: 1.2rem;
+   }
+
+   .slogan-paragraft {
+    font-size: .8rem;
    }
 
    .title-card {
