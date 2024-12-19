@@ -325,7 +325,7 @@
     justify-content: center;
     margin-top: 10rem;
     padding-top: 2px;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
 }
 
 .event-title {
@@ -365,9 +365,11 @@
     background-color: rgb(233, 233, 233);
     width: 100%;
     height: 100%;
-    padding-bottom: 90rem;
     border-top-left-radius: 60% 110px;
     border-top-right-radius: 60% 110px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .main-sekbid {
     display: flex;
@@ -482,6 +484,10 @@
     display: flex;
     text-align: left;
     color: #333;
+}
+
+.event-main {
+    margin-bottom: 2rem;
 }
 
 .event-item {
@@ -636,6 +642,76 @@
     opacity: 1;
   }
 
+  footer {
+    background-color: #29294a;
+    color: #fff;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+footer .footer-container .row {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+footer h4 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+footer p {
+    margin: 5px 0;
+    line-height: 1.6;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #ccc;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer .social-icons a {
+    margin-right: 10px;
+    font-size: 16px;
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+footer .social-icons a:hover {
+    transform: scale(1.2);
+}
+
+iframe {
+    border: 0;
+    width: 100vw;
+    max-width: 1200px;
+    height: 300px;
+    
+}
+
+.footer-container .row .col-md-4 {
+    margin: 1.2rem;
+    width: 100%;
+}
+
 
   
   @media (min-width: 768px) {
@@ -646,7 +722,7 @@
   }
 
 
-@media (max-width: 1540px) {
+@media (max-width: 1740px) {
     .navbar a {
         font-size: 12px;
     }
@@ -681,7 +757,7 @@
     }
 
     .dashboard-container .dashboard-item  {
-        width: 86rem;
+        width: 110rem;
     }
 
     .dashboard-container .dashboard-content {
@@ -790,9 +866,7 @@
         color: #333;
     }
 
-    .sekbid-background {
-        padding-bottom: 67rem;
-    }
+    
 
     .sekbid-title {
         font-size: 2rem;
@@ -807,6 +881,11 @@
         margin: 1rem;
     }
 
+    iframe {
+        max-width: 700px;
+    }
+  
+
     
 }
 
@@ -816,6 +895,15 @@
     }
     .dropdown-menu {
         display: none;
+    }
+
+    .dashboard-container .dashboard-item {
+        width: 80rem;
+        height: 40rem;
+    }
+
+    .dashboard-container .dashboard-content {
+        margin-left: 2rem;
     }
 
     .menu-icon {
@@ -872,9 +960,7 @@
 
     
 
-    .sekbid-background {
-        padding-bottom: 65rem;
-    }
+   
 
     .sekbid-title {
         font-size: 2rem;
@@ -907,8 +993,37 @@
         font-size: .8rem;
     }
 
-    .maps {
-        width: 800px;
+    iframe {
+        max-width: 500px;
+        height: 200px;
+    }
+
+   
+}
+
+
+
+@media (max-width: 1025px) {
+    footer .social-icon a {
+        font-size: 8px;
+    }
+
+    footer h4 {
+        font-size: 14px;
+    }
+
+    footer ul li a {
+        font-size: 12px;
+    }
+
+    footer p  {
+        font-size: 10px;
+    }
+}
+
+@media (max-width:900px) {
+    iframe {
+        max-width: 350px;
     }
 }
 
@@ -951,10 +1066,6 @@
         width: 600px;
         height: 200px;
     }
-
-    .sekbid-background {
-        padding-bottom: 65rem;
-    }
     
     .illustration {
         width: 200px;
@@ -994,17 +1105,27 @@
         max-width: 300px;
         width: 100%;
     }
+
+    iframe {
+        max-width: 270px;
+        height: 100px;
+    }
+
+    footer ul li {
+        margin-bottom: 5px;
+    }
 }
 
 @media (max-width: 662px) {
-    .maps {
-        width: 400px;
-        height: 600px;
+    iframe {
+        max-width: 120px;
+        height: 200px;
     }
 
-    .sekbid-background {
-        padding-bottom: 135rem;
+    .footer-container .row .col-md-4 {
+        margin: 2px;
     }
+ 
 }
 
 @media (max-width: 375px) {
@@ -1121,11 +1242,29 @@
         font-size: 0.5rem;
      }
 
-     .maps {
-        width: 300px;
-     }
-
      .dashboard-container .dashboard-content {
         margin-left: 1.4rem;
+     }
+
+     footer .footer-container .row {
+        flex-wrap: wrap;
+     }
+
+     iframe {
+        max-width: 290px;
+        min-width: 100px;
+        height: 200px;
+     }
+
+     .footer-container .row .col-md-4 {
+        margin: 1rem;
+     }
+
+     .col-md-4 ul li a {
+        font-size: 12px;
+     }
+
+     .col-md-4 p {
+        font-size: 12px;
      }
  }
