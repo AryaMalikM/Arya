@@ -23,6 +23,50 @@ btnBidang.addEventListener("click", toggleMenu);
 
 // Event listener untuk navigasi ke halaman lain
 const navigateButton = document.getElementById("navigateButton");
-navigateButton.addEventListener("click", () => {
-    window.location.href = "mpk-index.html";
-});
+
+/* SLIDER */
+
+const sliderItems = document.querySelectorAll('.illustration'); // Pastikan kelasnya benar
+
+let slideractive = 0; // Mulai dari gambar pertama
+
+if (sliderItems.length > 0) {
+    sliderItems.forEach((slider, index) => {
+        slider.setAttribute("data-show", index === slideractive ? "show" : "hidden");
+    });
+
+    setInterval(() => {
+        sliderItems.forEach((slider, index) => {
+            slider.setAttribute("data-show", index === slideractive ? "show" : "hidden");
+        });
+
+        slideractive = (slideractive + 1) % sliderItems.length; // Loop kembali ke awal
+    }, 1500);
+}
+
+// Second Slider 
+
+function setupSlider(sliderClass) {
+    const sliderItems = document.querySelectorAll(sliderClass); // Ambil elemen slider berdasarkan kelas
+    let slideractive = 0; // Mulai dari gambar pertama
+
+    if (sliderItems.length > 0) {
+        sliderItems.forEach((slider, index) => {
+            slider.setAttribute("data-show", index === slideractive ? "show" : "hidden");
+        });
+
+        setInterval(() => {
+            sliderItems.forEach((slider, index) => {
+                slider.setAttribute("data-show", index === slideractive ? "show" : "hidden");
+            });
+
+            slideractive = (slideractive + 1) % sliderItems.length; // Loop kembali ke awal
+        }, 1500);
+    }
+}
+
+// Setup untuk setiap slider
+setupSlider('.illustration'); // Slider pertama
+setupSlider('.illustration-second'); // Slider kedua
+setupSlider('.illustration-third'); // Slider ketiga
+setupSlider('.illustration-fourth')

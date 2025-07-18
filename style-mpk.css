@@ -712,7 +712,7 @@ iframe {
   }
 
 
-@media (max-width: 1540px) {
+@media (max-width: 1740px) {
     .navbar a {
         font-size: 12px;
     }
@@ -977,6 +977,10 @@ iframe {
         margin: 2px;
     }
  
+    
+    .footer-container .row  {
+        flex-wrap: wrap;
+    }
 }
 
 @media (max-width: 600px ) {
